@@ -146,6 +146,15 @@ confs = {
         "model": {"name": "megaloc"},
         "preprocessing": {"resize_max": 1024},
     },
+    "cosplace": {
+        "output": "global-feats-cosplace",
+        "model": {
+            "name": "cosplace",
+            "backbone": "ResNet50",
+            "fc_output_dim": 2048,
+        },
+        "preprocessing": {"resize_max": 1024},
+    },
 }
 
 
